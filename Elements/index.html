@@ -5,10 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
 <body>
-  <div class="card bg-dark m-auto w-75">
+	<div id="page"></div>
+	<hr class="my-4">
+	<div id="wrap">
+  <div class="card bg-info m-auto w-75">
   	<h5 class="card-header text-light">
-  		<span class="h1 text-warning font-italic mr-2">Javascript</span>
-  		<span class="btn btn-sm btn-danger float-right">X</span>
+  		<span class="h1 text-warning font-italic mr-2">JavaScript DOM</span>
+  		<span class="btn btn-sm btn-danger float-right" onclick="hide_element()">X</span>
   	</h5>
   	<div class="card-body row">
   		<div class="input-group">
@@ -19,11 +22,13 @@
   			<input type="text" class="col-2" placeholder="parent id">
   		</div>
   		<div class="btn-group mt-2">
-  			<span class="btn btn-warning">Create New Element</span>
-  			<span class="btn btn-danger">Remove Last Element</span>
-  			<span class="btn btn-outline-secondary">Reset</span>
+  			<span class="btn btn-warning mr-2" onclick="create_element()">Create New Element</span>
+  			<span class="btn btn-danger mr-1" onclick="remove_element()">Remove Last Element</span>
+  			<span class="btn btn-outline-secondary" onclick="reset()">Reset</span>
   		</div>
   	</div>
   </div>
+</div>
+  <script src="index.js"></script>
 </body>
 </html>
